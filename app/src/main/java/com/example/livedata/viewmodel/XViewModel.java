@@ -7,16 +7,17 @@ import androidx.lifecycle.ViewModel;
 
 import com.example.livedata.view.MainActivity;
 
-public class xViewModel extends ViewModel {
-    public MutableLiveData <String> x;
+public class XViewModel extends ViewModel{
+
+    public MutableLiveData <String> contingut;
 
     //constructor:
-    public xViewModel(){
-        this.x = new MutableLiveData<>();
-        this.x.setValue("HELLO WORLD!");
+    public XViewModel(){
+        this.contingut = new MutableLiveData<>();
+        this.contingut.setValue("HELLO WORLD!");
     }
 
     public void boton(){
-        x.setValue("Paula");
+        this.contingut.setValue("Paula");
     }
 }

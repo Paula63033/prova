@@ -4,27 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+        <import type="com.example.livedata.viewmodel.XViewModel"/>
         <variable
             name="viewModel"
-            type="com.example.livedata.viewmodel.xViewModel" />
+            type="com.example.livedata.viewmodel.XViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".view.MainActivity">
+        tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text='@={viewModel.x}'
+        android:text='@={viewModel.contingut}'
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.216" />
 
-    <Button
+        <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
